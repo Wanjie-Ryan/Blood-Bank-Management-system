@@ -16,5 +16,10 @@ namespace Blood_Bank_Management_system.UI
         {
             InitializeComponent();
         }
+
+        private void PBCloseUser_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
