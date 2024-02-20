@@ -522,6 +522,7 @@
             // pictureBoxClose
             // 
             pictureBoxClose.BackColor = SystemColors.Control;
+            pictureBoxClose.Cursor = Cursors.Hand;
             pictureBoxClose.Image = (Image)resources.GetObject("pictureBoxClose.Image");
             pictureBoxClose.Location = new Point(1073, 12);
             pictureBoxClose.Name = "pictureBoxClose";
@@ -529,6 +530,7 @@
             pictureBoxClose.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxClose.TabIndex = 14;
             pictureBoxClose.TabStop = false;
+            pictureBoxClose.Click += pictureBoxClose_Click;
             // 
             // frmHome
             // 
