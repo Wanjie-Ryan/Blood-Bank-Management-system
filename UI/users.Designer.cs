@@ -41,6 +41,18 @@
             lblUserEmail = new Label();
             txtUserID = new TextBox();
             lblUserId = new Label();
+            txtUsername = new TextBox();
+            lblUsername = new Label();
+            txtPwd = new TextBox();
+            lblPwd = new Label();
+            txtContact = new TextBox();
+            lblContact = new Label();
+            txtAddress = new TextBox();
+            lblUserAddress = new Label();
+            btnAdd = new Button();
+            btnUpdate = new Button();
+            btnDelete = new Button();
+            btnClear = new Button();
             panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)PBCloseUser).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbProfPic).BeginInit();
@@ -156,12 +168,134 @@
             lblUserId.TabIndex = 8;
             lblUserId.Text = "User ID";
             // 
+            // txtUsername
+            // 
+            txtUsername.Location = new Point(195, 412);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(203, 31);
+            txtUsername.TabIndex = 11;
+            // 
+            // lblUsername
+            // 
+            lblUsername.AutoSize = true;
+            lblUsername.Location = new Point(12, 412);
+            lblUsername.Name = "lblUsername";
+            lblUsername.Size = new Size(105, 24);
+            lblUsername.TabIndex = 10;
+            lblUsername.Text = "User Name";
+            // 
+            // txtPwd
+            // 
+            txtPwd.Location = new Point(195, 467);
+            txtPwd.MaxLength = 10;
+            txtPwd.Name = "txtPwd";
+            txtPwd.Size = new Size(203, 31);
+            txtPwd.TabIndex = 13;
+            // 
+            // lblPwd
+            // 
+            lblPwd.AutoSize = true;
+            lblPwd.Location = new Point(12, 467);
+            lblPwd.Name = "lblPwd";
+            lblPwd.Size = new Size(97, 24);
+            lblPwd.TabIndex = 12;
+            lblPwd.Text = "Password";
+            // 
+            // txtContact
+            // 
+            txtContact.Location = new Point(195, 522);
+            txtContact.MaxLength = 10;
+            txtContact.Name = "txtContact";
+            txtContact.Size = new Size(203, 31);
+            txtContact.TabIndex = 15;
+            // 
+            // lblContact
+            // 
+            lblContact.AutoSize = true;
+            lblContact.Location = new Point(12, 522);
+            lblContact.Name = "lblContact";
+            lblContact.Size = new Size(77, 24);
+            lblContact.TabIndex = 14;
+            lblContact.Text = "Contact";
+            // 
+            // txtAddress
+            // 
+            txtAddress.Location = new Point(195, 581);
+            txtAddress.Multiline = true;
+            txtAddress.Name = "txtAddress";
+            txtAddress.Size = new Size(203, 73);
+            txtAddress.TabIndex = 17;
+            // 
+            // lblUserAddress
+            // 
+            lblUserAddress.AutoSize = true;
+            lblUserAddress.Location = new Point(12, 581);
+            lblUserAddress.Name = "lblUserAddress";
+            lblUserAddress.Size = new Size(85, 24);
+            lblUserAddress.TabIndex = 16;
+            lblUserAddress.Text = "Address";
+            // 
+            // btnAdd
+            // 
+            btnAdd.Cursor = Cursors.Hand;
+            btnAdd.Location = new Point(463, 616);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new Size(108, 38);
+            btnAdd.TabIndex = 18;
+            btnAdd.Text = "Add";
+            btnAdd.UseVisualStyleBackColor = true;
+            // 
+            // btnUpdate
+            // 
+            btnUpdate.Cursor = Cursors.Hand;
+            btnUpdate.FlatStyle = FlatStyle.System;
+            btnUpdate.Location = new Point(577, 616);
+            btnUpdate.Name = "btnUpdate";
+            btnUpdate.Size = new Size(109, 38);
+            btnUpdate.TabIndex = 19;
+            btnUpdate.Text = "Update";
+            btnUpdate.UseVisualStyleBackColor = true;
+            // 
+            // btnDelete
+            // 
+            btnDelete.Cursor = Cursors.Hand;
+            btnDelete.FlatStyle = FlatStyle.System;
+            btnDelete.Location = new Point(692, 616);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(109, 38);
+            btnDelete.TabIndex = 20;
+            btnDelete.Text = "Delete";
+            btnDelete.UseVisualStyleBackColor = true;
+            // 
+            // btnClear
+            // 
+            btnClear.Cursor = Cursors.Hand;
+            btnClear.FlatStyle = FlatStyle.System;
+            btnClear.Location = new Point(807, 616);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new Size(109, 38);
+            btnClear.TabIndex = 21;
+            btnClear.Text = "Clear";
+            btnClear.UseVisualStyleBackColor = true;
+            // 
             // users
             // 
             AutoScaleDimensions = new SizeF(11F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ScrollBar;
-            ClientSize = new Size(1100, 500);
+            ClientSize = new Size(1100, 700);
+            Controls.Add(btnClear);
+            Controls.Add(btnDelete);
+            Controls.Add(btnUpdate);
+            Controls.Add(btnAdd);
+            Controls.Add(txtAddress);
+            Controls.Add(lblUserAddress);
+            Controls.Add(txtContact);
+            Controls.Add(lblContact);
+            Controls.Add(txtPwd);
+            Controls.Add(lblPwd);
+            Controls.Add(txtUsername);
+            Controls.Add(lblUsername);
             Controls.Add(txtUserID);
             Controls.Add(lblUserId);
             Controls.Add(txtUsermail);
@@ -200,5 +334,17 @@
         private Label lblUserEmail;
         private TextBox txtUserID;
         private Label lblUserId;
+        private TextBox txtUsername;
+        private Label lblUsername;
+        private TextBox txtPwd;
+        private Label lblPwd;
+        private TextBox txtContact;
+        private Label lblContact;
+        private TextBox txtAddress;
+        private Label lblUserAddress;
+        private Button btnAdd;
+        private Button btnUpdate;
+        private Button btnDelete;
+        private Button btnClear;
     }
 }
