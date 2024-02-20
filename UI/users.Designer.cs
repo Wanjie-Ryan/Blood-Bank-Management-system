@@ -53,9 +53,13 @@
             btnUpdate = new Button();
             btnDelete = new Button();
             btnClear = new Button();
+            dgvUsers = new DataGridView();
+            lblSearch = new Label();
+            txtSearch = new TextBox();
             panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)PBCloseUser).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbProfPic).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvUsers).BeginInit();
             SuspendLayout();
             // 
             // panelTop
@@ -278,12 +282,40 @@
             btnClear.Text = "Clear";
             btnClear.UseVisualStyleBackColor = true;
             // 
+            // dgvUsers
+            // 
+            dgvUsers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvUsers.Location = new Point(498, 301);
+            dgvUsers.Name = "dgvUsers";
+            dgvUsers.RowHeadersWidth = 51;
+            dgvUsers.Size = new Size(521, 275);
+            dgvUsers.TabIndex = 22;
+            // 
+            // lblSearch
+            // 
+            lblSearch.AutoSize = true;
+            lblSearch.Location = new Point(498, 239);
+            lblSearch.Name = "lblSearch";
+            lblSearch.Size = new Size(72, 24);
+            lblSearch.TabIndex = 23;
+            lblSearch.Text = "Search";
+            // 
+            // txtSearch
+            // 
+            txtSearch.Location = new Point(621, 239);
+            txtSearch.Name = "txtSearch";
+            txtSearch.Size = new Size(398, 31);
+            txtSearch.TabIndex = 24;
+            // 
             // users
             // 
             AutoScaleDimensions = new SizeF(11F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ScrollBar;
             ClientSize = new Size(1100, 700);
+            Controls.Add(txtSearch);
+            Controls.Add(lblSearch);
+            Controls.Add(dgvUsers);
             Controls.Add(btnClear);
             Controls.Add(btnDelete);
             Controls.Add(btnUpdate);
@@ -316,6 +348,7 @@
             panelTop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)PBCloseUser).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbProfPic).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvUsers).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -346,5 +379,8 @@
         private Button btnUpdate;
         private Button btnDelete;
         private Button btnClear;
+        private DataGridView dgvUsers;
+        private Label lblSearch;
+        private TextBox txtSearch;
     }
 }

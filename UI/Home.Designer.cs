@@ -96,12 +96,14 @@
             menuStripTop.Size = new Size(1135, 44);
             menuStripTop.TabIndex = 0;
             menuStripTop.Text = "menuStrip1";
+            menuStripTop.ItemClicked += this.menuStripTop_ItemClicked;
             // 
             // usersToolStripMenuItem
             // 
             usersToolStripMenuItem.Name = "usersToolStripMenuItem";
             usersToolStripMenuItem.Size = new Size(70, 24);
             usersToolStripMenuItem.Text = "Users";
+            usersToolStripMenuItem.Click += this.usersToolStripMenuItem_Click;
             // 
             // donorsToolStripMenuItem
             // 
@@ -518,6 +520,7 @@
             txtSearch.Name = "txtSearch";
             txtSearch.Size = new Size(360, 29);
             txtSearch.TabIndex = 13;
+            txtSearch.TextChanged += this.txtSearch_TextChanged;
             // 
             // pictureBoxClose
             // 
